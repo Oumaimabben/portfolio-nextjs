@@ -5,7 +5,7 @@ export const portfolioData = {
     email: 'oumaima.benothmene@gmail.com',
     phone: '+216 27 391 739',
     github: 'https://github.com/Oumaimabben',
-    linkedin: 'https://linkedin.com/in/Oumama-Ben-Othman',
+    linkedin: 'https://www.linkedin.com/in/oumaima-ben-othman-2b48a1211/',
     summary: 'Jeune diplômée Ingénieure en Logiciel spécialisée en Génie Logiciel et Systèmes d\'Information avec une solide formation en développement full-stack. Expérimentée dans la création d\'applications web évolutives et sécurisées en utilisant le stack JS et les pratiques modernes de DevOps.',
     location: 'Tunisia'
   },

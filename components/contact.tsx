@@ -7,8 +7,12 @@ import { useLanguage } from '@/app/context/language-context';
 
 export function Contact() {
   const { profile } = portfolioData;
-  const { t } = useLanguage();
-
+  const { t , lang } = useLanguage();
+  const cvFile =
+  lang === 'en'
+    ? '/BENOTHMAN_Oumaima_en.pdf'
+    : '/BENOTHMAN_Oumaima_fr.pdf';
+    console.log("Current language:", lang);
   return (
     <section className="py-16 sm:py-20 px-4 sm:px-6 md:px-8 bg-gradient-to-b from-background via-background to-accent/8">
       <div className="max-w-4xl mx-auto">
@@ -59,12 +63,21 @@ export function Contact() {
 
         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4">
 
-          <Button asChild size="sm">
-            <a href="/Oumaima_Ben_Othman_CV.pdf" download>
-              <Download className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-              {t.sections.downloadCV}
-            </a>
-          </Button>
+<Button
+  asChild
+  size="sm"
+  className="px-6 py-2 rounded-full bg-accent text-white hover:bg-accent/90 transition-all duration-300 shadow-md hover:shadow-lg"
+>
+  <a
+    href={cvFile}
+    download
+    className="flex items-center gap-2"
+  >
+    <Download className="w-4 h-4" />
+    {t.hero.downloadCV}
+  </a>
+</Button>
+    
 
           <Button asChild size="sm" variant="outline">
             <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">

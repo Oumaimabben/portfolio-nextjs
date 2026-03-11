@@ -89,24 +89,11 @@ export const portfolioData = {
 - **Typography**: Clean, readable sans-serif fonts
 - **Spacing**: Tailwind's standard spacing scale with responsive adjustments
 - **Components**: shadcn/ui + custom Tailwind styling
+ 
+📸 Screenshots
 
-## Future Enhancements
+<img width="1846" height="957" alt="PORTFOLIO" src="https://github.com/user-attachments/assets/6ea155ab-9f21-488b-89ba-da800f73d1ef" />
 
-- MongoDB integration for dynamic data management
-- Contact form with email notifications
-- Blog section for technical articles
-- Dark/light mode toggle
-- Performance optimizations
-- SEO improvements
-
-## Deployment
-
-The portfolio is ready for deployment on Vercel:
-
-```bash
-# Deploy to Vercel
-vercel deploy
-```
 
 ## License
 
